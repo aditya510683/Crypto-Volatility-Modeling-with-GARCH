@@ -1,38 +1,47 @@
-# Crypto-Volatility-Modelling-with-GARCH
+# Cryptocurrency Volatility Modeling 
 
-This project analyzes the volatility of **Bitcoin (BTC)** and **Ethereum (ETH)** using the GARCH(1,1) model. It provides insights into the comparative volatility patterns of these two major cryptocurrencies over the past year.
+![Volatility Plot Example](volatility_plot.png)
 
-## Key Features
-- Implements the **GARCH(1,1)** model for volatility estimation.
-- Visualizes volatility trends for BTC and ETH over a 365-day period.
-- Compares the volatility patterns to identify which asset is more volatile.
+A Python-based project for modeling and analyzing cryptocurrency price volatility using GARCH-family models. This implementation automatically selects the best volatility model based on statistical criteria and provides visual insights into market dynamics.
+
+## 📌 Project Description
+
+This project models price volatility for Bitcoin (BTC) and Ethereum (ETH) using:
+- **GARCH** (Generalized Autoregressive Conditional Heteroskedasticity)
+- **EGARCH** (Exponential GARCH)
+- **GJR-GARCH** (Glosten-Jagannathan-Runkle GARCH)
+
+Key features:
+- Automated data fetching from CoinGecko API
+- Model comparison using AIC/BIC criteria
+- Best model selection for volatility estimation
+- Interactive volatility visualization
+- Comprehensive output analysis
+
+## 🚀 Features
+
+- **Data Pipeline**
+  - Daily price data fetching for cryptocurrencies
+  - Log returns calculation
+  - Missing data handling
   
-## Data Source
-The historical price data for Bitcoin and Ethereum is retrieved from **CoinGecko** using their free API. 
+- **Model Framework**
+  - GARCH(1,1) implementation
+  - EGARCH(1,1) with leverage effects
+  - GJR-GARCH(1,1) with asymmetric volatility modeling
+  
+- **Analytics**
+  - Automated model selection (AIC/BIC)
+  - Conditional volatility visualization
+  - Comparative analysis of BTC vs ETH volatility
 
-### API Endpoint:
-`https://api.coingecko.com/api/v3/coins/{crypto}/market_chart?vs_currency=usd&days=365&interval=daily`
+## 📋 Requirements
 
-## Results
-From the analysis:
-- **Ethereum (ETH)** exhibits higher volatility compared to **Bitcoin (BTC)**.
-- ETH has larger spikes and a broader volatility range, making it more sensitive to market events.
-
-## Graph
-The generated plot highlights the volatility trends for BTC and ETH:
-- **Blue Line**: BTC GARCH(1,1) Volatility
-- **Orange Line**: ETH GARCH(1,1) Volatility
-
-![Volatility Graph](path/to/your/image.png)
-
-## Requirements
 - Python 3.8+
-- Libraries:
-  - `pandas` for data manipulation
-  - `numpy` for numerical calculations
-  - `matplotlib` for plotting
-  - `arch` for implementing GARCH models
-  - `requests` for fetching data from the CoinGecko API
-
-
-Feel free to contribute to improve the project!
+- Required packages:
+  ```text
+  pandas >= 1.4.3
+  numpy >= 1.22.4
+  requests >= 2.28.1
+  matplotlib >= 3.5.3
+  arch >= 5.3.1
