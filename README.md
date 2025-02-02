@@ -1,4 +1,4 @@
-# Cryptocurrency Volatility Modeling 
+# Cryptocurrency Volatility Modelling 
 
 ![Volatility Plot Example](volatility_plot.png)
 
