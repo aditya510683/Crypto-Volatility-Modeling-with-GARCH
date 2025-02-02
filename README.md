@@ -6,6 +6,12 @@ This project analyzes the volatility of **Bitcoin (BTC)** and **Ethereum (ETH)**
 - Implements the **GARCH(1,1)** model for volatility estimation.
 - Visualizes volatility trends for BTC and ETH over a 365-day period.
 - Compares the volatility patterns to identify which asset is more volatile.
+  
+## Data Source
+The historical price data for Bitcoin and Ethereum is retrieved from **CoinGecko** using their free API. 
+
+### API Endpoint:
+`https://api.coingecko.com/api/v3/coins/{crypto}/market_chart?vs_currency=usd&days=365&interval=daily`
 
 ## Results
 From the analysis:
@@ -22,30 +28,11 @@ The generated plot highlights the volatility trends for BTC and ETH:
 ## Requirements
 - Python 3.8+
 - Libraries:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
-  - `arch`
+  - `pandas` for data manipulation
+  - `numpy` for numerical calculations
+  - `matplotlib` for plotting
+  - `arch` for implementing GARCH models
+  - `requests` for fetching data from the CoinGecko API
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/garch-volatility-analysis.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-## Usage
-1. Run the script:
-   ```bash
-   python garch_analysis.py
-   ```
-2. View the output graph to analyze BTC and ETH volatility.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
 Feel free to contribute to improve the project!
