@@ -1,6 +1,6 @@
 # Cryptocurrency Volatility Modelling 
 
-!Volatility.png
+![Volatility Plot](Volatility.png)
 
 A Python-based project for modeling and analyzing cryptocurrency price volatility using GARCH-family models. This implementation automatically selects the best volatility model based on statistical criteria and provides visual insights into market dynamics.
 
