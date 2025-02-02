@@ -1,4 +1,4 @@
-# Crypto-Volatility-Modeling-with-GARCH
+# Crypto-Volatility-Modelling-with-GARCH
 
 This project analyzes the volatility of **Bitcoin (BTC)** and **Ethereum (ETH)** using the GARCH(1,1) model. It provides insights into the comparative volatility patterns of these two major cryptocurrencies over the past year.
 
